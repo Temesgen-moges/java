@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ekubms.adminHomeController">
+   <children>
+      <Pane prefHeight="538.0" prefWidth="891.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Label layoutX="310.0" layoutY="23.0" prefHeight="44.0" prefWidth="306.0" text="AASTU EKUB MANAGEMENT " textFill="#d00606">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="415.0" layoutY="59.0" prefHeight="44.0" prefWidth="97.0" text="SYSTEM" textFill="#d30606">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Label>
+            <Pane layoutX="509.0" layoutY="158.0" prefHeight="350.0" prefWidth="6.0" style="-fx-background-color: gray;" />
+            <Pane layoutX="569.0" layoutY="150.0" prefHeight="350.0" prefWidth="226.0" style="-fx-background-color: gray;">
+               <children>
+                  <Label layoutX="38.0" layoutY="21.0" prefHeight="44.0" prefWidth="174.0" text="Monthly Result" textFill="#f5f0f0">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="26.0" layoutY="94.0" prefHeight="44.0" prefWidth="174.0" text="This Months result is" textFill="#f5f0f0">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="resultUser" layoutX="58.0" layoutY="153.0" prefHeight="44.0" prefWidth="110.0" text="user4" textFill="#f5f0f0">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="56.0" layoutY="122.0" prefHeight="378.0" prefWidth="296.0" style="-fx-background-color: lightblue;">
+               <children>
+                  <Label layoutX="9.0" layoutY="22.0" prefHeight="44.0" prefWidth="279.0" text="For Complains and comments">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="verifyBtn" layoutX="208.0" layoutY="301.0" mnemonicParsing="false" onAction="#verify" style="-fx-background-color: blue;" text="SEND" textFill="#e1e1e1">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="49.0" layoutY="242.0" prefHeight="21.0" prefWidth="44.0" text="Date">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="verDare" layoutX="130.0" layoutY="240.0" prefHeight="25.0" prefWidth="149.0" />
+                  <Button fx:id="verCancel" layoutX="71.0" layoutY="301.0" mnemonicParsing="false" onAction="#cancelVer" style="-fx-background-color: red;" text="Cancel" textFill="#e1e1e1">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <TextArea layoutX="16.0" layoutY="66.0" prefHeight="156.0" prefWidth="268.0" promptText="please write here" />
+               </children>
+            </Pane>
+            <Pane layoutX="13.0" layoutY="103.0" prefHeight="14.0" prefWidth="865.0" style="-fx-background-color: gray;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
